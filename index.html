@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Kurieita | Simple websites for small businesses</title>
+<meta name="description" content="Kurieita builds clean, mobile-friendly websites for small businesses. $160 per site. By David, based in Trinidad and Tobago.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='32' fill='%23e8402a'/%3E%3Ctext x='32' y='44' font-size='36' font-family='Georgia,serif' font-weight='700' text-anchor='middle' fill='white'%3EK%3C/text%3E%3C/svg%3E">
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1:wght@700;800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f7f5f0;--card:#fff;--ink:#15161d;--muted:#5b5d68;--red:#e8402a;--line:#dedad0;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#111218;--card:#1b1c25;--ink:#f3f1ea;--muted:#a9abb7;--red:#ff6a52;--line:#2c2e3b}}
+:root[data-theme="dark"]{--bg:#111218;--card:#1b1c25;--ink:#f3f1ea;--muted:#a9abb7;--red:#ff6a52;--line:#2c2e3b}
+*,*::before,*::after{box-sizing:inherit}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 1.05rem/1.65 "DM Sans",system-ui,sans-serif}
+h1,h2,h3{font-family:"Shippori Mincho B1",Georgia,serif;margin:0;line-height:1.1}
+a{color:inherit}
+a:focus-visible{outline:3px solid var(--red);outline-offset:3px}
+.wrap{max-width:50rem;margin:0 auto;padding:0 1.25rem}
+header{display:flex;justify-content:space-between;align-items:center;padding:1.2rem 0}
+.logo{font:800 1.5rem "Shippori Mincho B1",Georgia,serif;text-decoration:none}
+.logo i{display:inline-block;width:.55rem;height:.55rem;background:var(--red);border-radius:50%;margin-left:.15rem}
+nav a{margin-left:1rem;text-decoration:none;font-weight:500;color:var(--muted)}
+.hero{padding:2.5rem 0 2rem;border-bottom:1px solid var(--line)}
+.kana{color:var(--red);font-weight:700;letter-spacing:.15em;font-size:.9rem;margin:0 0 1rem}
+h1{font-size:clamp(2.5rem,10vw,4.4rem);font-weight:800;letter-spacing:-.01em}
+.lead{max-width:34rem;color:var(--muted);font-size:1.15rem;margin:1.2rem 0 1.6rem}
+.cta{display:flex;flex-wrap:wrap;gap:.7rem}
+.btn{display:inline-block;background:var(--red);color:#fff;padding:.85rem 1.5rem;border-radius:.4rem;font-weight:700;text-decoration:none}
+.btn.alt{background:transparent;color:var(--ink);border:2px solid var(--ink)}
+section{padding:2.5rem 0;border-bottom:1px solid var(--line)}
+h2{font-size:2rem;margin-bottom:.4rem}
+.sub{color:var(--muted);margin:0 0 1.4rem}
+.feat{background:var(--ink);color:var(--bg);border-radius:.8rem;padding:1.5rem;display:grid;gap:1rem}
+.feat h3{font-size:1.5rem}
+.feat p{margin:0;opacity:.85}
+.feat .btn{justify-self:start}
+blockquote{margin:0;padding:1rem 1.2rem;border-left:4px solid var(--red);background:#ffffff14;border-radius:.3rem}
+blockquote cite{display:block;margin-top:.5rem;font-style:normal;font-weight:700;font-size:.95rem}
+.grid{display:grid;gap:.8rem;margin-top:1.4rem}
+.card{display:block;background:var(--card);border:1px solid var(--line);border-radius:.6rem;padding:1.1rem 1.2rem;text-decoration:none}
+.card b{display:block;font:800 1.15rem "Shippori Mincho B1",Georgia,serif}
+.card span{color:var(--muted);font-size:.95rem}
+.card:hover{border-color:var(--red)}
+.price{display:grid;gap:1rem}
+.box{background:var(--card);border:1px solid var(--line);border-radius:.8rem;padding:1.4rem}
+.box .n{font:800 2.6rem "Shippori Mincho B1",Georgia,serif;color:var(--red);line-height:1}
+.box h3{font-size:1.2rem;margin-bottom:.5rem}
+.box ul{margin:.8rem 0 0;padding-left:1.1rem;color:var(--muted)}
+.steps{margin:0;padding:0;list-style:none;display:grid;gap:1rem;counter-reset:s}
+.steps li{counter-increment:s;display:flex;gap:1rem}
+.steps li::before{content:counter(s);flex:none;width:2rem;height:2rem;border-radius:50%;background:var(--red);color:#fff;font-weight:700;display:flex;align-items:center;justify-content:center}
+.steps b{display:block}
+.steps span{color:var(--muted)}
+.contact p{margin:.3rem 0}
+footer{padding:1.5rem 0 3rem;color:var(--muted);font-size:.95rem}
+@media (min-width:44rem){.grid{grid-template-columns:1fr 1fr}.price{grid-template-columns:1fr 1fr}.feat{grid-template-columns:1.2fr 1fr;align-items:center}}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <a class="logo" href="#">Kurieita<i></i></a>
+  <nav><a href="#work">Work</a><a href="#pricing">Pricing</a><a href="#contact">Contact</a></nav>
+</header>
+
+<div class="hero">
+  <p class="kana">クリエイター · CREATOR</p>
+  <h1>Simple websites for small businesses.</h1>
+  <p class="lead">Hi, I’m David. I build clean, mobile-friendly sites with your menu or services, photos, hours, a map and a contact button, so customers can find you and reach you fast.</p>
+  <div class="cta">
+    <a class="btn" href="mailto:dailydonestore@gmail.com?subject=Website%20for%20my%20business">Email me</a>
+  </div>
+</div>
+
+<section id="work">
+  <h2>Recent work</h2>
+  <p class="sub">A real site for a real customer, plus sample designs for different kinds of business.</p>
+  <div class="feat">
+    <div>
+      <h3>Sue’s Cuisine</h3>
+      <p>Home-style food in Arouca, Trinidad. A one-page site with her menu, photos, hours and WhatsApp ordering.</p>
+      <p style="margin-top:1rem"><a class="btn" href="https://doneskills.github.io/Sue-s-Cuisine/">View the live site</a></p>
+    </div>
+    <blockquote>“The website is good and clean. You can see the photos of my menu quick and easy. Working with David was simple and good. Customers are finding my site and placing orders.”<cite>Sue, Sue’s Cuisine, Arouca</cite></blockquote>
+  </div>
+  <div class="grid">
+    <a class="card" href="https://doneskills.github.io/website-samples/bakery/"><b>Bakery</b><span>Sample design: menu, photos, location</span></a>
+    <a class="card" href="https://doneskills.github.io/website-samples/barber/"><b>Barbershop</b><span>Sample design: services, prices, team</span></a>
+    <a class="card" href="https://doneskills.github.io/website-samples/cleaning/"><b>Home cleaning</b><span>Sample design: packages, steps, FAQ</span></a>
+    <a class="card" href="https://doneskills.github.io/website-samples/roti/"><b>Roti shop</b><span>Sample design: menu and directions</span></a>
+  </div>
+</section>
+
+<section id="pricing">
+  <h2>Pricing</h2>
+  <p class="sub">Simple, clear, and in US dollars.</p>
+  <div class="price">
+    <div class="box"><div class="n">$160</div><h3>One-page website</h3>
+      <ul><li>$80 to begin, $80 when you’re happy</li><li>Your menu or services, photos, hours and map</li><li>Call or WhatsApp button</li><li>One round of changes</li><li>Free preview before you decide</li></ul></div>
+    <div class="box"><div class="n">Your choice</div><h3>Hosting</h3>
+      <ul><li>Host it yourself: I send you the files and help you set it up</li><li>Or I host it for $10 a month</li><li>If you ever leave, you get your files</li></ul></div>
+  </div>
+</section>
+
+<section id="how">
+  <h2>How it works</h2>
+  <ol class="steps">
+    <li><div><b>Say hello</b><span>Tell me about your business and send photos if you have them.</span></div></li>
+    <li><div><b>See a free preview</b><span>I make a quick version so you can see how it looks.</span></div></li>
+    <li><div><b>Approve and pay $80</b><span>I finish your site and make any changes you ask for.</span></div></li>
+    <li><div><b>Go live</b><span>You pay the last $80 and your site goes live, hosted by you or by me.</span></div></li>
+  </ol>
+</section>
+
+<section id="contact" class="contact" style="border:0">
+  <h2>Let’s talk</h2>
+  <p class="sub">Based in Trinidad and Tobago, working with businesses everywhere.</p>
+  <p>Email: <a href="mailto:dailydonestore@gmail.com">dailydonestore@gmail.com</a></p>
+  <p>Send me a short message about your business and I’ll reply. If you prefer WhatsApp, we can continue there.</p>
+  <p style="margin-top:1.2rem"><a class="btn" href="mailto:dailydonestore@gmail.com?subject=Website%20for%20my%20business">Email me</a></p>
+</section>
+</div>
+<footer><div class="wrap">© Kurieita. Simple websites for small businesses.</div></footer>
+</body>
+</html>
